@@ -1,0 +1,150 @@
+.footer-modern {
+  background: #f6f4ff;
+  color: var(--text-dark);
+  padding: 100px 10vw 60px;
+  font-family: inherit;
+}
+
+.footer-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.footer-brand img {
+  width: 220px;
+  margin-bottom: 25px;
+}
+
+.footer-brand p {
+  font-size: 17px;
+  line-height: 1.9;
+  max-width: 480px;
+  color: #444;
+}
+
+.footer-icons {
+  margin-top: 25px;
+}
+
+.footer-icons img {
+  width: 36px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  color: var(--primary-color);
+  font-family: inherit;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.footer-links ul,
+.footer-contact p {
+  font-size: 17px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover {
+  color: #7a5cf0;
+}
+
+.footer-contact p {
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.footer-bottom p {
+  font-size: 15px;
+  color: #666;
+}
+
+.footer-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-email-icon {
+  font-size: 1.1em;
+}
+
+.footer-email-text {
+  font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 60px;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-brand img {
+    width: 150px;
+  }
+
+  .footer-brand p {
+    font-size: 16px;
+  }
+
+  .footer-links h4,
+  .footer-contact h4 {
+    font-size: 20px;
+  }
+
+  .footer-links li,
+  .footer-contact p {
+    font-size: 16px;
+  }
+}

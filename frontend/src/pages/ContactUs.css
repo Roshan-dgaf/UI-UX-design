@@ -1,0 +1,131 @@
+.contact-page {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fc;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    padding: 60px 20px 120px;
+    background: linear-gradient(135deg, #5e3ba1, #3a2676);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.contact-header p {
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.contact-header,
+.contact-header * {
+    color: #fff;
+}
+
+/* Wrapper */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* Shared box styles */
+.contact-box {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Info Box */
+.info-box h2 {
+    font-size: 1.1rem;
+    color: #452c80;
+    margin-bottom: 20px;
+}
+
+.info-box p,
+.info-box ul li {
+    font-size: 0.97rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    padding-left: 18px;
+}
+
+/* Form Box */
+.form-box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #452c80;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.97rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 14px;
+    font-size: 0.97rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #452c80;
+    outline: none;
+}
+
+.form-box button {
+    color: #fff;
+    /* Using global button style - no additional styles needed */
+    padding: 14px;
+    /* Specific padding for this button */
+    letter-spacing: 0.5px;
+    /* Keep the letter spacing for this specific button */
+    font-size: 1rem;
+}
+
+.form-box button:hover {
+    background-color: #2e1a55;
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+}

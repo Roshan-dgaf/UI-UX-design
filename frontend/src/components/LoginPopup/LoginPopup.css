@@ -1,0 +1,125 @@
+.modern-login-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 1rem;
+    font-family: inherit;
+    color: var(--text-dark);
+}
+
+.modern-login-container {
+    background: #fff;
+    width: 100%;
+    max-width: 420px;
+    padding: 36px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: fadeIn 0.3s ease;
+}
+
+.modern-login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modern-login-header h2 {
+    font-size: 22px;
+    color: #4c2aad;
+    font-weight: 600;
+}
+
+.modern-login-header img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.modern-login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modern-login-inputs input {
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #d0c4f0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.modern-login-inputs input:focus {
+    border-color: #7a5cf0;
+    outline: none;
+}
+
+.modern-login-terms {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    font-size: 13px;
+    color: #555;
+}
+
+.modern-login-terms input {
+    margin-top: 4px;
+}
+
+.modern-login-btn {
+    /* Using global button style - no additional styles needed */
+    padding: 12px;
+    /* Specific padding for this button */
+    border-radius: 10px;
+    /* Rounded corners for this specific button */
+}
+
+.modern-login-toggle {
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.modern-login-toggle span {
+    color: #7a5cf0;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.modern-login-header h2,
+.modern-login-toggle,
+.modern-login-terms,
+.modern-login-inputs input {
+    font-family: inherit;
+    color: var(--text-dark);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-login-container {
+        padding: 28px 20px;
+    }
+
+    .modern-login-header h2 {
+        font-size: 20px;
+    }
+}

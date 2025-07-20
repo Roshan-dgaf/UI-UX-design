@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #452C80;
+    --cta-bg: #f4f0fa;
+    --text-dark: #333;
+    --radius: 10px;
+}
+
+.cta-section {
+    padding: 20px 5% 70px 5%;
+    background: #fff;
+    text-align: center;
+    border-radius: 32px;
+    margin: 60px auto 0 auto;
+    max-width: 1100px;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.cta-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    /* Using global button style - no additional styles needed */
+    padding: 14px 28px;
+    /* Specific padding for this button */
+    border-radius: var(--radius);
+    /* Rounded corners for this specific button */
+}
+
+.cta-button:hover {
+    background-color: #361e6a;
+}
+
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 40px 20px;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}

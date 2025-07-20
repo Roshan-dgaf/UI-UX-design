@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #452C80;
+  --text-dark: #23272f;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', 'Segoe UI', Arial, sans-serif;
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+  color: var(--text-dark);
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 100%;
+  margin: auto;
+}
+
+/* Global Button Style */
+button {
+  padding: 12px 30px;
+  font-size: 1.05rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #00d1b2;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 209, 178, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width:1050px) {
+  .app {
+    width: 90%;
+  }
+}

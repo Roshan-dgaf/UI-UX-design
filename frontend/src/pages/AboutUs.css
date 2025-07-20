@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #452C80;
+    --cta-bg: #f4f0fa;
+    --text-dark: #333;
+    --section-padding: 80px;
+    --radius: 12px;
+}
+
+/* Reusable Button */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    /* Changed from 30px to 6px */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 14px rgba(69, 44, 128, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #361e6a;
+    transform: translateY(-2px);
+}
+
+
+/* Hero Section */
+.about-hero {
+    background-color: var(--primary-color);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+/* Section 1 */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--section-padding) 8vw;
+    background-color: #f9f9ff;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    max-width: 480px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h5 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #6244c5;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.about-text h2 {
+    font-size: 1.2rem;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.about-text p {
+    font-size: 0.97rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Section 2 */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--section-padding) 10%;
+    background-color: #fff;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-left,
+.about-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-left h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #1e1e1e;
+    font-weight: 700;
+}
+
+.about-left p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 480px;
+    border-radius: 10px;
+}
+
+/* CTA Section */
+.about-cta {
+    background-color: var(--cta-bg);
+    padding: var(--section-padding) 20px;
+    text-align: center;
+}
+
+.about-cta h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1e1e1e;
+}
+
+.about-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+
+    .about-section,
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5vw;
+    }
+
+    .about-text,
+    .about-left {
+        padding: 0;
+    }
+
+    .about-text h2,
+    .about-left h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p,
+    .about-left p,
+    .about-cta p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+    }
+}
+
+.about-section,
+.about-text,
+.about-text h5,
+.about-text h2,
+.about-text p,
+.btn-primary {
+    font-family: inherit;
+    color: var(--text-dark);
+}
+
+.btn-primary,
+.about-section button,
+.about-content button {
+    color: #fff;
+}

@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #452C80;
+    --text-gray: #444;
+    --bg-light: #fafafa;
+    --border-color: #e0e0e0;
+    --radius: 8px;
+}
+
+.my-orders {
+    margin: 60px 5%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.orders-heading {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.orders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 10px rgba(69, 44, 128, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+}
+
+.order-icon {
+    width: 50px;
+    margin-top: 5px;
+}
+
+.order-details {
+    flex-grow: 1;
+}
+
+.order-items {
+    font-size: 14px;
+    color: var(--text-gray);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.order-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #666;
+}
+
+.order-price {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.order-count {
+    color: #777;
+}
+
+.order-status {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.status-dot {
+    font-size: 12px;
+    margin-right: 5px;
+    color: #4caf50;
+    /* green dot by default */
+}
+
+/* You can style different statuses here */
+.order-status.pending .status-dot {
+    color: orange;
+}
+
+.order-status.completed .status-dot {
+    color: #4caf50;
+}
+
+.order-status.cancelled .status-dot {
+    color: red;
+}
+
+.track-btn {
+    /* Using global button style - no additional styles needed */
+    padding: 10px 16px;
+    /* Slightly smaller padding for this specific button */
+    font-size: 13px;
+    /* Smaller font size for this specific button */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .order-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-meta {
+        gap: 10px;
+    }
+
+    .track-btn {
+        width: 100%;
+    }
+}

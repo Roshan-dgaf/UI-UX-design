@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 4%;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo enhancements */
+.navbar .logo {
+    width: max(12%, 100px);
+    height: auto;
+}
+
+/* Profile enhancements */
+.navbar .profile {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #6b48ff;
+    /* Accent border to show admin identity */
+    transition: transform 0.2s ease;
+}
+
+.navbar .profile:hover {
+    transform: scale(1.05);
+    /* Optional hover effect */
+}

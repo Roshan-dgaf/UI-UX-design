@@ -1,0 +1,98 @@
+.order {
+    padding: 2rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #23272f;
+    font-size: 16px;
+}
+
+.order h3,
+.order-item-food,
+.order-item-name,
+.order-item-address p,
+.order-item-phone,
+.order-item select {
+    font-family: inherit;
+    color: inherit;
+}
+
+.order h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #23272f;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.4fr 2fr 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    align-items: start;
+    transition: transform 0.2s ease;
+}
+
+.order-item:hover {
+    transform: translateY(-2px);
+}
+
+.order-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+.order-item-food,
+.order-item-name,
+.order-item-address p,
+.order-item-phone {
+    font-size: 16px;
+    font-weight: 500;
+    color: #23272f;
+}
+
+.order-item select {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    width: max(10vw, 140px);
+    transition: border-color 0.3s ease;
+}
+
+.order-item select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+@media (max-width: 1000px) {
+    .order-item {
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .order-item select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .order-item img {
+        width: 40px;
+        height: 40px;
+    }
+}
